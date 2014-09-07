@@ -2,6 +2,12 @@
 
 # Version of your assets, change this if you want to expire all your assets.
 Rails.application.config.assets.version = '1.0'
+Rails.application.config.assets.precompile += %w( jasmine.css )
+Rails.application.config.assets.precompile += %w( jasmine.js )
+Rails.application.config.assets.precompile += %w( jasmine-html.js )
+Rails.application.config.assets.precompile += %w( json2.js )
+Rails.application.config.assets.precompile += %w( jasmine-boot.js )
+Rails.application.config.assets.precompile += %w( jasmine-specs.js )
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
