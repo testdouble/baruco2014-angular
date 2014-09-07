@@ -7,6 +7,10 @@ Rails.application.routes.draw do
   get 'my-name-is/' => 'my_name_is#index'
   get 'list/' => 'list#index'
 
+  namespace :api do
+    resources :tasks
+  end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
